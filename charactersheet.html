@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<head>
+  <title>Starfinder Character Sheet</title>
+  <link rel="stylesheet" href="Stuff/charactersheet.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="characterinfo">
+        <input type="text" placeholder="Character Name" class="linebox">
+        &nbsp;the&nbsp;
+        <input type="text" placeholder="Race" class="linebox">
+        <input type="text" placeholder="Theme" class="linebox">
+        <input type="text" placeholder="Class" class="linebox">
+        <input type="button" value="Load" style="float: right">
+        <input type="button" value="Save" style="float: right">
+        <hr>
+        <table cellspacing="0">
+          <tr>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+          </tr>
+          <tr>
+            <td><div class="smallfont" style="text-align:left;">Player</div></td>
+            <td><div class="smallfont" style="text-align:left;">Size</div></td>
+            <td><div class="smallfont" style="text-align:left;">Speed</div></td>
+            <td><div class="smallfont" style="text-align:left;">Diety</div></td>
+          </tr>
+        </table>
+        <table cellspacing="0">
+          <tr>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+            <td><input type="text" class="linebox"></td>
+          </tr>
+          <tr>
+            <td><div class="smallfont" style="text-align:left;">Gender</div></td>
+            <td><div class="smallfont" style="text-align:left;">Height</div></td>
+            <td><div class="smallfont" style="text-align:left;">Weight</div></td>
+            <td><div class="smallfont" style="text-align:left;">Home World</div></td>
+            <td><div class="smallfont" style="text-align:left;">Alignment</div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapright">
+      <div class="right">
+        <div class="healthresolve">
+          <fieldset>
+            <legend>HEALTH AND RESOLVE</legend>
+            <table>
+              <tr>
+                <td></td>
+                <td><div class="smallfont">STAMINA POINTS</div></td>
+                <td><div class="smallfont">HIT POINTS</div></td>
+                <td><div class="smallfont">RESOLVE POINTS</div></td>
+              </tr>
+              <tr>
+                <td>TOTAL</td>
+                <td><input type="text" maxlength="6" size="3"></td>
+                <td><input type="text" maxlength="6" size="3"></td>
+                <td><input type="text" maxlength="6" size="3"></td>
+              </tr>
+              <tr>
+                <td>CURRENT</td>
+                <td><input type="text" maxlength="6" size="3"></td>
+                <td><input type="text" maxlength="6" size="3"></td>
+                <td><input type="text" maxlength="6" size="3"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </div>
+
+        <div class="armorclass">
+          <fieldset>
+            <legend>ARMOR CLASS</legend>
+            <table>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><div class="smallfont">TOTAL</div></td>
+                <td></td>
+                <td style="width: 15px;"><div class="smallfont">ARMOR BONUS</div></td>
+                <td></td>
+                <td><div class="smallfont">DEX MOD</div></td>
+                <td></td>
+                <td><div class="smallfont">MISC MOD</div></td>
+              </tr>
+              <tr>
+                <td style="background: black; text-align: center;"><b style="color: white;">EAC</b></td>
+                <td>ENERGY ARMOR CLASS</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">&nbsp;= 10 + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+              <tr>
+                <td style="background: black; text-align: center;"><b style="color: white;">KAC</b></td>
+                <td>KINETIC ARMOR CLASS</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">&nbsp;= 10 + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+              <tr>
+                <td style="background: black; text-align: center;"><b style="color: white;">AC</b></td>
+                <td>VS. COMBAT MANEUVERS</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">&nbsp;= 8 + </td>
+                <td style="background: black; text-align: center;"><b style="color: white;">KAC</b></td>
+              </tr>
+            </table>
+            <hr>
+            <table style="width: 100%;">
+              <tbody><tr>
+                <td><b style="padding-right: 10px">DR</b><input type="text" style="width: 75%;" class="linebox"></td>
+                <td><b style="padding-right: 10px">RESISTANCES</b><input type="text" style="width: 75%;" class="linebox"></td>
+              </tr></tbody>
+            </table>
+          </fieldset>
+        </div>
+
+        <div class="savingthrows">
+          <fieldset>
+            <legend>SAVING THROWS</legend>
+            <table>
+              <tr>
+                <td></td>
+                <td><div class="smallfont">TOTAL</div></td>
+                <td></td>
+                <td><div class="smallfont">BASE SAVE</div></td>
+                <td></td>
+                <td><div class="smallfont">DEX MOD</div></td>
+                <td></td>
+                <td><div class="smallfont">MISC MOD</div></td>
+              </tr>
+              <tr>
+                <td style="background: black; text-align: center;"><b style="color: white;">FORT</b></td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> = </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+              <tr>
+                <td style="background: black; text-align: center;"><b style="color: white;">REF</b></td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> = </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+              <tr>
+                <td style="background: black; text-align: center;"><b style="color: white;">WILL</b></td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> = </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont"> + </td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </div>
+
+        <div class="attackbonus">
+          <fieldset>
+            <legend>ATTACK BONUSES</legend>
+            <table>
+              <tr>
+                <td></td>
+                <td><div class="smallfont">TOTAL</div></td>
+                <td></td>
+                <td><div class="smallfont">BAB</div></td>
+                <td></td>
+                <td><div class="smallfont">STR MOD</div></td>
+                <td></td>
+                <td><div class="smallfont">MISC MOD</div></td>
+              </tr>
+              <tr>
+                <td>MELEE ATTACK</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">=</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">+</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont" class="mfont">+</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td></td>
+                <td><div class="smallfont">TOTAL</div></td>
+                <td></td>
+                <td><div class="smallfont">BAB</div></td>
+                <td></td>
+                <td><div class="smallfont">DEX MOD</div></td>
+                <td></td>
+                <td><div class="smallfont">MISC MOD</div></td>
+              </tr>
+              <tr>
+                <td>RANGED ATTACK</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">=</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">+</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">+</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td></td>
+                <td><div class="smallfont">TOTAL</div></td>
+                <td></td>
+                <td><div class="smallfont">BAB</div></td>
+                <td></td>
+                <td><div class="smallfont">STR MOD</div></td>
+                <td></td>
+                <td><div class="smallfont">MISC MOD</div></td>
+              </tr>
+              <tr>
+                <td>THROWN ATTACK</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">=</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">+</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+                <td class="mfont">+</td>
+                <td><input type="text" maxlength="4" size="3"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </div>
+
+        <div class="weapons">
+          <fieldset>
+            <legend>WEAPONS</legend>
+            <table cellspacing="0">
+              <tr>
+                <td>
+                  <table cellspacing="0">
+                    <tr>
+                      <td><input type="text" style="width: 146px;" placeholder="weapon"></td>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" maxlength="2" size="1" placeholder="level"></td>
+                            <td><input type="text" size="5" placeholder="atk bonus"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="4" placeholder="damage"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" size="3" placeholder="critical"></td>
+                            <td><input type="text" size="1" placeholder="range"></td>
+                            <td><input type="text" size="3" placeholder="type"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="11" placeholder="ammo/usage"></td>
+                      <td><input type="text" size="4" placeholder="special"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table cellspacing="0">
+                    <tr>
+                      <td><input type="text" style="width: 146px;" placeholder="weapon"></td>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" maxlength="2" size="1" placeholder="level"></td>
+                            <td><input type="text" size="5" placeholder="atk bonus"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="4" placeholder="damage"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" size="3" placeholder="critical"></td>
+                            <td><input type="text" size="1" placeholder="range"></td>
+                            <td><input type="text" size="3" placeholder="type"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="11" placeholder="ammo/usage"></td>
+                      <td><input type="text" size="4" placeholder="special"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellspacing="0">
+                    <tr>
+                      <td><input type="text" style="width: 146px;" placeholder="weapon"></td>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" maxlength="2" size="1" placeholder="level"></td>
+                            <td><input type="text" size="5" placeholder="atk bonus"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="4" placeholder="damage"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" size="3" placeholder="critical"></td>
+                            <td><input type="text" size="1" placeholder="range"></td>
+                            <td><input type="text" size="3" placeholder="type"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="11" placeholder="ammo/usage"></td>
+                      <td><input type="text" size="4" placeholder="special"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table cellspacing="0">
+                    <tr>
+                      <td><input type="text" style="width: 146px;" placeholder="weapon"></td>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" maxlength="2" size="1" placeholder="level"></td>
+                            <td><input type="text" size="5" placeholder="atk bonus"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="4" placeholder="damage"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" size="3" placeholder="critical"></td>
+                            <td><input type="text" size="1" placeholder="range"></td>
+                            <td><input type="text" size="3" placeholder="type"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="11" placeholder="ammo/usage"></td>
+                      <td><input type="text" size="4" placeholder="special"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellspacing="0">
+                    <tr>
+                      <td><input type="text" style="width: 146px;" placeholder="weapon"></td>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" maxlength="2" size="1" placeholder="level"></td>
+                            <td><input type="text" size="5" placeholder="atk bonus"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="4" placeholder="damage"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" size="3" placeholder="critical"></td>
+                            <td><input type="text" size="1" placeholder="range"></td>
+                            <td><input type="text" size="3" placeholder="type"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="11" placeholder="ammo/usage"></td>
+                      <td><input type="text" size="4" placeholder="special"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table cellspacing="0">
+                    <tr>
+                      <td><input type="text" style="width: 146px;" placeholder="weapon"></td>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" maxlength="2" size="1" placeholder="level"></td>
+                            <td><input type="text" size="5" placeholder="atk bonus"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="4" placeholder="damage"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0">
+                          <tr>
+                            <td><input type="text" size="3" placeholder="critical"></td>
+                            <td><input type="text" size="1" placeholder="range"></td>
+                            <td><input type="text" size="3" placeholder="type"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td><input type="text" size="11" placeholder="ammo/usage"></td>
+                      <td><input type="text" size="4" placeholder="special"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div class="left">
+      <div class="initiative">
+        <fieldset>
+          <legend>INITIATIVE</legend>
+          <table>
+            <tr>
+              <td><div class="smallfont">TOTAL</div></td>
+              <td></td>
+              <td><div class="smallfont">DEX MOD</div></td>
+              <td></td>
+              <td><div class="smallfont">MISC MOD</div></td>
+            </tr>
+            <tr>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td class="mfont">=</td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td class="mfont">+</td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div class="abilityscores">
+        <fieldset>
+          <legend>ABILITY SCORES</legend>
+          <table>
+            <tr>
+              <td></td>
+              <td><div class="smallfont">SCORE</div></td>
+              <td><div class="smallfont">MODIFIER</div></td>
+              <td><div class="smallfont">UPGRADED SCORE</div></td>
+              <td><div class="smallfont">UPGRADED MODIFIER</div></td>
+            </tr>
+            <tr>
+              <td style="background: black;"><b style="color: white;">STR</b></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+            <tr>
+              <td style="background: black;"><b style="color: white;">DEX</b></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+            <tr>
+              <td style="background: black;"><b style="color: white;">CON</b></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+            <tr>
+              <td style="background: black;"><b style="color: white;">INT</b></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+            <tr>
+              <td style="background: black;"><b style="color: white;">WIS</b></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+            <tr>
+              <td style="background: black;"><b style="color: white;">CHA</b></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+              <td><input type="text" maxlength="3" size="1"></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div class="skills">
+        SKILLS
+        SKILL RANKS PER LEVEL <td><input type="text" maxlength="4" size="3"></td>
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="smallfont">TOTAL</div></td>
+            <td></td>
+            <td><div class="smallfont">RANKS</div></td>
+            <td></td>
+            <td><div class="smallfont">CLASS BONUS</div></td>
+            <td></td>
+            <td><div class="smallfont">ABILITY MOD</div></td>
+            <td></td>
+            <td><div class="smallfont">MISC MOD</div></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>ACROBATICS* (DEX)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>ATHLETICS* (STR)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>BLUFF (CHA)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>COMPUTERS (INT)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>CULTURE (INT)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>DIPLOMACY (CHA)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>DISGUISE (CHA)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>ENGINEERING (INT)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>INTIMIDATE (CHA)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>LIFE SCIENCE (INT)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>MEDICINE (INT)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>MYSTICISM (WIS)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>PERCEPTION (WIS)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>PHYSICAL SCIENCE (INT)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>PILOTING (DEX)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>PROFESSION (CHA, INT, OR WIS)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><input type="text" style="width: 100%;" class="linebox"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>PROFESSION (CHA, INT, OR WIS)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><input type="text" style="width: 100%;" class="linebox"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>SENSE MOTIVE (WIS)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>SLEIGHT OF HAND* (DEX)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>STEALTH* (DEX)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+          <tr>
+            <td>&#9765;</td>
+            <td><input type="checkbox"></td>
+            <td>SURVIVAL (WIS)</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>=</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+            <td>+</td>
+            <td><input type="text" maxlength="4" size="3"></td>
+          </tr>
+        </table>
+        &#9765; Trained Only &#9745; Class Skill * Armor check penalty applies
+      </div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+    <div class="abilities">
+      <fieldset>
+        <legend>Abilities</legend>
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+      </fieldset>
+    </div>
+
+    <div class="feats">
+      <fieldset>
+        <legend>Feats</legend>
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+        <input type="text" class="linebox">
+      </fieldset>
+    </div>
+
+    <table style="padding-bottom: 10px;">
+      <tr>
+        <td>
+          <div class="equipment">
+            <fieldset>
+              <legend>Equipment</legend>
+              <table>
+                <tr>
+                  <td></td>
+                  <td><div class="smallfont">LEVEL</div></td>
+                  <td><div class="smallfont">BULK</div></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="linebox"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                  <td><input type="text" class="linebox" size="1"></td>
+                </tr>
+              </table>
+            </fieldset>
+          </div>
+        </td>
+        <td>
+          <table>
+            <tr><td>
+              <div class="wealth">
+                <fieldset>
+                  <legend>Wealth</legend>
+                  Credits <input type="text" class="linebox">
+                </fieldset>
+              </div>
+            </td></tr>
+            <tr><td>
+              <div class="languages">
+                <fieldset>
+                  <legend>Languages</legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </div>
+            </td></tr>
+            <tr><td>
+              <div class="experience">
+                <fieldset>
+                  <legend>Experience</legend>
+                  Experience Earned <input type="text" class="linebox">
+                  Next Level <input type="text" class="linebox">
+                </fieldset>
+              </div>
+            </td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div class="spells">
+      <fieldset>
+        <legend>Spells</legend>
+          <table>
+            <tr>
+              <td>
+                <fieldset>
+                  <legend>0
+                  <table>
+                    <tr>
+                      <td><div class="smallfont">SPELLS KNOWN</div></td>
+                      <td><div class="smallfont">SPELLS PER DAY</div></td>
+                      <td><div class="smallfont">SPELL SLOTS USED</div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </table></legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </td>
+              <td>
+                <fieldset>
+                  <legend>4th
+                  <table>
+                    <tr>
+                      <td><div class="smallfont">SPELLS KNOWN</div></td>
+                      <td><div class="smallfont">SPELLS PER DAY</div></td>
+                      <td><div class="smallfont">SPELL SLOTS USED</div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </table></legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <fieldset>
+                  <legend>1st
+                  <table>
+                    <tr>
+                      <td><div class="smallfont">SPELLS KNOWN</div></td>
+                      <td><div class="smallfont">SPELLS PER DAY</div></td>
+                      <td><div class="smallfont">SPELL SLOTS USED</div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </table></legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </td>
+              <td>
+                <fieldset>
+                  <legend>5th
+                  <table>
+                    <tr>
+                      <td><div class="smallfont">SPELLS KNOWN</div></td>
+                      <td><div class="smallfont">SPELLS PER DAY</div></td>
+                      <td><div class="smallfont">SPELL SLOTS USED</div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </table></legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <fieldset>
+                  <legend>3rd
+                  <table>
+                    <tr>
+                      <td><div class="smallfont">SPELLS KNOWN</div></td>
+                      <td><div class="smallfont">SPELLS PER DAY</div></td>
+                      <td><div class="smallfont">SPELL SLOTS USED</div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </table></legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </td>
+              <td>
+                <fieldset>
+                  <legend>6th
+                  <table>
+                    <tr>
+                      <td><div class="smallfont">SPELLS KNOWN</div></td>
+                      <td><div class="smallfont">SPELLS PER DAY</div></td>
+                      <td><div class="smallfont">SPELL SLOTS USED</div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </table></legend>
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                  <input type="text" class="linebox">
+                </fieldset>
+              </td>
+            </tr>
+          </table>
+      </fieldset>
+    </div>
+  </div>
+
+</body>
