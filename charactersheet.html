@@ -10,20 +10,20 @@
   <div class="wrapper">
     <div class="header">
       <div class="characterinfo">
-        <input type="text" placeholder="Character Name" class="linebox" class="name">
+        <input type="text" placeholder="Character Name" class="linebox name">
         &nbsp;the&nbsp;
-        <input type="text" placeholder="Race" class="linebox" class="race">
-        <input type="text" placeholder="Theme" class="linebox" class="theme">
-        <input type="text" placeholder="Class" class="linebox" class="class">
-        <input type="button" value="Load" style="float: right">
-        <input type="button" value="Save" style="float: right">
+        <input type="text" placeholder="Race" class="linebox race">
+        <input type="text" placeholder="Theme" class="linebox theme">
+        <input type="text" placeholder="Class" class="linebox class">
+        <input type="file" value="Load" id="load" style="float: right" onchange="load(this)">
+        <input type="button" value="Save" id="save" style="float: right" onclick="save()">
         <hr>
         <table cellspacing="0">
           <tr>
-            <td><input type="text" class="linebox" class="player"></td>
-            <td><input type="text" class="linebox" class="size"></td>
-            <td><input type="text" class="linebox" class="speed"></td>
-            <td><input type="text" class="linebox" class="diety"></td>
+            <td><input type="text" class="linebox player"></td>
+            <td><input type="text" class="linebox size"></td>
+            <td><input type="text" class="linebox speed"></td>
+            <td><input type="text" class="linebox diety"></td>
           </tr>
           <tr>
             <td><div class="smallfont" style="text-align:left;">Player</div></td>
@@ -34,11 +34,11 @@
         </table>
         <table cellspacing="0">
           <tr>
-            <td><input type="text" class="linebox" class="gender"></td>
-            <td><input type="text" class="linebox" class="height"></td>
-            <td><input type="text" class="linebox" class="weight"></td>
-            <td><input type="text" class="linebox" class="homeworld"></td>
-            <td><input type="text" class="linebox" class="alignment"></td>
+            <td><input type="text" class="linebox gender"></td>
+            <td><input type="text" class="linebox height"></td>
+            <td><input type="text" class="linebox weight"></td>
+            <td><input type="text" class="linebox homeworld"></td>
+            <td><input type="text" class="linebox alignment"></td>
           </tr>
           <tr>
             <td><div class="smallfont" style="text-align:left;">Gender</div></td>
@@ -126,8 +126,8 @@
             <hr>
             <table style="width: 100%;">
               <tbody><tr>
-                <td><b style="padding-right: 10px">DR</b><input type="text" style="width: 75%;" class="linebox" class="DR"></td>
-                <td><b style="padding-right: 10px">RESISTANCES</b><input type="text" style="width: 75%;" class="linebox" class="resistances"></td>
+                <td><b style="padding-right: 10px">DR</b><input type="text" style="width: 75%;" class="linebox DR"></td>
+                <td><b style="padding-right: 10px">RESISTANCES</b><input type="text" style="width: 75%;" class="linebox resistances"></td>
               </tr></tbody>
             </table>
           </fieldset>
@@ -764,7 +764,7 @@
           <tr>
             <td></td>
             <td></td>
-            <td><input type="text" style="width: 100%;" class="linebox" class="profession0name"></td>
+            <td><input type="text" style="width: 100%;" class="linebox profession0name"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -792,7 +792,7 @@
           <tr>
             <td></td>
             <td></td>
-            <td><input type="text" style="width: 100%;" class="linebox" class="profession1name"></td>
+            <td><input type="text" style="width: 100%;" class="linebox profession1name"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -869,100 +869,100 @@
     <div class="abilities">
       <fieldset>
         <legend>Abilities</legend>
-        <input type="text" class="linebox" class="abilities0">
-        <input type="text" class="linebox" class="abilities1">
-        <input type="text" class="linebox" class="abilities2">
-        <input type="text" class="linebox" class="abilities3">
-        <input type="text" class="linebox" class="abilities4">
-        <input type="text" class="linebox" class="abilities5">
-        <input type="text" class="linebox" class="abilities6">
-        <input type="text" class="linebox" class="abilities7">
-        <input type="text" class="linebox" class="abilities8">
-        <input type="text" class="linebox" class="abilities9">
-        <input type="text" class="linebox" class="abilities10">
-        <input type="text" class="linebox" class="abilities11">
-        <input type="text" class="linebox" class="abilities12">
-        <input type="text" class="linebox" class="abilities13">
-        <input type="text" class="linebox" class="abilities14">
-        <input type="text" class="linebox" class="abilities15">
-        <input type="text" class="linebox" class="abilities16">
-        <input type="text" class="linebox" class="abilities17">
-        <input type="text" class="linebox" class="abilities18">
-        <input type="text" class="linebox" class="abilities19">
-        <input type="text" class="linebox" class="abilities20">
-        <input type="text" class="linebox" class="abilities21">
-        <input type="text" class="linebox" class="abilities22">
-        <input type="text" class="linebox" class="abilities23">
-        <input type="text" class="linebox" class="abilities24">
-        <input type="text" class="linebox" class="abilities25">
-        <input type="text" class="linebox" class="abilities26">
-        <input type="text" class="linebox" class="abilities27">
-        <input type="text" class="linebox" class="abilities28">
-        <input type="text" class="linebox" class="abilities29">
-        <input type="text" class="linebox" class="abilities30">
-        <input type="text" class="linebox" class="abilities31">
-        <input type="text" class="linebox" class="abilities32">
-        <input type="text" class="linebox" class="abilities33">
-        <input type="text" class="linebox" class="abilities34">
-        <input type="text" class="linebox" class="abilities35">
-        <input type="text" class="linebox" class="abilities36">
-        <input type="text" class="linebox" class="abilities37">
-        <input type="text" class="linebox" class="abilities38">
-        <input type="text" class="linebox" class="abilities39">
-        <input type="text" class="linebox" class="abilities40">
-        <input type="text" class="linebox" class="abilities41">
-        <input type="text" class="linebox" class="abilities42">
-        <input type="text" class="linebox" class="abilities43">
-        <input type="text" class="linebox" class="abilities44">
-        <input type="text" class="linebox" class="abilities45">
-        <input type="text" class="linebox" class="abilities46">
-        <input type="text" class="linebox" class="abilities47">
-        <input type="text" class="linebox" class="abilities48">
-        <input type="text" class="linebox" class="abilities49">
-        <input type="text" class="linebox" class="abilities50">
-        <input type="text" class="linebox" class="abilities51">
-        <input type="text" class="linebox" class="abilities52">
-        <input type="text" class="linebox" class="abilities53">
-        <input type="text" class="linebox" class="abilities54">
-        <input type="text" class="linebox" class="abilities55">
-        <input type="text" class="linebox" class="abilities56">
-        <input type="text" class="linebox" class="abilities57">
-        <input type="text" class="linebox" class="abilities58">
-        <input type="text" class="linebox" class="abilities59">
-        <input type="text" class="linebox" class="abilities60">
-        <input type="text" class="linebox" class="abilities61">
-        <input type="text" class="linebox" class="abilities62">
-        <input type="text" class="linebox" class="abilities63">
+        <input type="text" class="linebox abilities0">
+        <input type="text" class="linebox abilities1">
+        <input type="text" class="linebox abilities2">
+        <input type="text" class="linebox abilities3">
+        <input type="text" class="linebox abilities4">
+        <input type="text" class="linebox abilities5">
+        <input type="text" class="linebox abilities6">
+        <input type="text" class="linebox abilities7">
+        <input type="text" class="linebox abilities8">
+        <input type="text" class="linebox abilities9">
+        <input type="text" class="linebox abilities10">
+        <input type="text" class="linebox abilities11">
+        <input type="text" class="linebox abilities12">
+        <input type="text" class="linebox abilities13">
+        <input type="text" class="linebox abilities14">
+        <input type="text" class="linebox abilities15">
+        <input type="text" class="linebox abilities16">
+        <input type="text" class="linebox abilities17">
+        <input type="text" class="linebox abilities18">
+        <input type="text" class="linebox abilities19">
+        <input type="text" class="linebox abilities20">
+        <input type="text" class="linebox abilities21">
+        <input type="text" class="linebox abilities22">
+        <input type="text" class="linebox abilities23">
+        <input type="text" class="linebox abilities24">
+        <input type="text" class="linebox abilities25">
+        <input type="text" class="linebox abilities26">
+        <input type="text" class="linebox abilities27">
+        <input type="text" class="linebox abilities28">
+        <input type="text" class="linebox abilities29">
+        <input type="text" class="linebox abilities30">
+        <input type="text" class="linebox abilities31">
+        <input type="text" class="linebox abilities32">
+        <input type="text" class="linebox abilities33">
+        <input type="text" class="linebox abilities34">
+        <input type="text" class="linebox abilities35">
+        <input type="text" class="linebox abilities36">
+        <input type="text" class="linebox abilities37">
+        <input type="text" class="linebox abilities38">
+        <input type="text" class="linebox abilities39">
+        <input type="text" class="linebox abilities40">
+        <input type="text" class="linebox abilities41">
+        <input type="text" class="linebox abilities42">
+        <input type="text" class="linebox abilities43">
+        <input type="text" class="linebox abilities44">
+        <input type="text" class="linebox abilities45">
+        <input type="text" class="linebox abilities46">
+        <input type="text" class="linebox abilities47">
+        <input type="text" class="linebox abilities48">
+        <input type="text" class="linebox abilities49">
+        <input type="text" class="linebox abilities50">
+        <input type="text" class="linebox abilities51">
+        <input type="text" class="linebox abilities52">
+        <input type="text" class="linebox abilities53">
+        <input type="text" class="linebox abilities54">
+        <input type="text" class="linebox abilities55">
+        <input type="text" class="linebox abilities56">
+        <input type="text" class="linebox abilities57">
+        <input type="text" class="linebox abilities58">
+        <input type="text" class="linebox abilities59">
+        <input type="text" class="linebox abilities60">
+        <input type="text" class="linebox abilities61">
+        <input type="text" class="linebox abilities62">
+        <input type="text" class="linebox abilities63">
       </fieldset>
     </div>
 
     <div class="feats">
       <fieldset>
         <legend>Feats</legend>
-        <input type="text" class="linebox" class="feats0">
-        <input type="text" class="linebox" class="feats1">
-        <input type="text" class="linebox" class="feats2">
-        <input type="text" class="linebox" class="feats3">
-        <input type="text" class="linebox" class="feats4">
-        <input type="text" class="linebox" class="feats5">
-        <input type="text" class="linebox" class="feats6">
-        <input type="text" class="linebox" class="feats7">
-        <input type="text" class="linebox" class="feats8">
-        <input type="text" class="linebox" class="feats9">
-        <input type="text" class="linebox" class="feats10">
-        <input type="text" class="linebox" class="feats11">
-        <input type="text" class="linebox" class="feats12">
-        <input type="text" class="linebox" class="feats13">
-        <input type="text" class="linebox" class="feats14">
-        <input type="text" class="linebox" class="feats15">
-        <input type="text" class="linebox" class="feats16">
-        <input type="text" class="linebox" class="feats17">
-        <input type="text" class="linebox" class="feats18">
-        <input type="text" class="linebox" class="feats19">
-        <input type="text" class="linebox" class="feats20">
-        <input type="text" class="linebox" class="feats21">
-        <input type="text" class="linebox" class="feats22">
-        <input type="text" class="linebox" class="feats23">
+        <input type="text" class="linebox feats0">
+        <input type="text" class="linebox feats1">
+        <input type="text" class="linebox feats2">
+        <input type="text" class="linebox feats3">
+        <input type="text" class="linebox feats4">
+        <input type="text" class="linebox feats5">
+        <input type="text" class="linebox feats6">
+        <input type="text" class="linebox feats7">
+        <input type="text" class="linebox feats8">
+        <input type="text" class="linebox feats9">
+        <input type="text" class="linebox feats10">
+        <input type="text" class="linebox feats11">
+        <input type="text" class="linebox feats12">
+        <input type="text" class="linebox feats13">
+        <input type="text" class="linebox feats14">
+        <input type="text" class="linebox feats15">
+        <input type="text" class="linebox feats16">
+        <input type="text" class="linebox feats17">
+        <input type="text" class="linebox feats18">
+        <input type="text" class="linebox feats19">
+        <input type="text" class="linebox feats20">
+        <input type="text" class="linebox feats21">
+        <input type="text" class="linebox feats22">
+        <input type="text" class="linebox feats23">
       </fieldset>
     </div>
 
@@ -979,79 +979,79 @@
                   <td><div class="smallfont">BULK</div></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment0name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment0level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment0bulk"></td>
+                  <td><input type="text" class="linebox equipment0name"></td>
+                  <td><input type="text" size="1" class="linebox equipment0level"></td>
+                  <td><input type="text" size="1" class="linebox equipment0bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment1name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment1level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment1bulk"></td>
+                  <td><input type="text" class="linebox equipment1name"></td>
+                  <td><input type="text" size="1" class="linebox equipment1level"></td>
+                  <td><input type="text" size="1" class="linebox equipment1bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment2name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment2level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment2bulk"></td>
+                  <td><input type="text" class="linebox equipment2name"></td>
+                  <td><input type="text" size="1" class="linebox equipment2level"></td>
+                  <td><input type="text" size="1" class="linebox equipment2bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment3name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment3level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment3bulk"></td>
+                  <td><input type="text" class="linebox equipment3name"></td>
+                  <td><input type="text" size="1" class="linebox equipment3level"></td>
+                  <td><input type="text" size="1" class="linebox equipment3bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment4name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment4level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment4bulk"></td>
+                  <td><input type="text" class="linebox equipment4name"></td>
+                  <td><input type="text" size="1" class="linebox equipment4level"></td>
+                  <td><input type="text" size="1" class="linebox equipment4bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment5name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment5level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment5bulk"></td>
+                  <td><input type="text" class="linebox equipment5name"></td>
+                  <td><input type="text" size="1" class="linebox equipment5level"></td>
+                  <td><input type="text" size="1" class="linebox equipment5bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment6name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment6level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment6bulk"></td>
+                  <td><input type="text" class="linebox equipment6name"></td>
+                  <td><input type="text" size="1" class="linebox equipment6level"></td>
+                  <td><input type="text" size="1" class="linebox equipment6bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment7name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment7level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment7bulk"></td>
+                  <td><input type="text" class="linebox equipment7name"></td>
+                  <td><input type="text" size="1" class="linebox equipment7level"></td>
+                  <td><input type="text" size="1" class="linebox equipment7bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment8name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment8level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment8bulk"></td>
+                  <td><input type="text" class="linebox equipment8name"></td>
+                  <td><input type="text" size="1" class="linebox equipment8level"></td>
+                  <td><input type="text" size="1" class="linebox equipment8bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment9name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment9level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment9bulk"></td>
+                  <td><input type="text" class="linebox equipment9name"></td>
+                  <td><input type="text" size="1" class="linebox equipment9level"></td>
+                  <td><input type="text" size="1" class="linebox equipment9bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment10name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment10level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment10bulk"></td>
+                  <td><input type="text" class="linebox equipment10name"></td>
+                  <td><input type="text" size="1" class="linebox equipment10level"></td>
+                  <td><input type="text" size="1" class="linebox equipment10bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment11name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment11level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment11bulk"></td>
+                  <td><input type="text" class="linebox equipment11name"></td>
+                  <td><input type="text" size="1" class="linebox equipment11level"></td>
+                  <td><input type="text" size="1" class="linebox equipment11bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment12name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment12level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment12bulk"></td>
+                  <td><input type="text" class="linebox equipment12name"></td>
+                  <td><input type="text" size="1" class="linebox equipment12level"></td>
+                  <td><input type="text" size="1" class="linebox equipment12bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment13name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment13level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment13bulk"></td>
+                  <td><input type="text" class="linebox equipment13name"></td>
+                  <td><input type="text" size="1" class="linebox equipment13level"></td>
+                  <td><input type="text" size="1" class="linebox equipment13bulk"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="linebox" class="equipment14name"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment14level"></td>
-                  <td><input type="text" class="linebox" size="1" class="equipment14bulk"></td>
+                  <td><input type="text" class="linebox equipment14name"></td>
+                  <td><input type="text" size="1" class="linebox equipment14level"></td>
+                  <td><input type="text" size="1" class="linebox equipment14bulk"></td>
                 </tr>
               </table>
             </fieldset>
@@ -1063,7 +1063,7 @@
               <div class="wealth">
                 <fieldset>
                   <legend>Wealth</legend>
-                  Credits <input type="text" class="linebox" class="credits">
+                  Credits <input type="text" class="linebox credits">
                 </fieldset>
               </div>
             </td></tr>
@@ -1071,18 +1071,18 @@
               <div class="languages">
                 <fieldset>
                   <legend>Languages</legend>
-                  <input type="text" class="linebox" class="language0">
-                  <input type="text" class="linebox" class="language1">
-                  <input type="text" class="linebox" class="language2">
-                  <input type="text" class="linebox" class="language3">
-                  <input type="text" class="linebox" class="language4">
-                  <input type="text" class="linebox" class="language5">
-                  <input type="text" class="linebox" class="language6">
-                  <input type="text" class="linebox" class="language7">
-                  <input type="text" class="linebox" class="language8">
-                  <input type="text" class="linebox" class="language9">
-                  <input type="text" class="linebox" class="language10">
-                  <input type="text" class="linebox" class="language11">
+                  <input type="text" class="linebox language0">
+                  <input type="text" class="linebox language1">
+                  <input type="text" class="linebox language2">
+                  <input type="text" class="linebox language3">
+                  <input type="text" class="linebox language4">
+                  <input type="text" class="linebox language5">
+                  <input type="text" class="linebox language6">
+                  <input type="text" class="linebox language7">
+                  <input type="text" class="linebox language8">
+                  <input type="text" class="linebox language9">
+                  <input type="text" class="linebox language10">
+                  <input type="text" class="linebox language11">
                 </fieldset>
               </div>
             </td></tr>
@@ -1090,8 +1090,8 @@
               <div class="experience">
                 <fieldset>
                   <legend>Experience</legend>
-                  Experience Earned <input type="text" class="linebox" class="expearned">
-                  Next Level <input type="text" class="linebox" class="expnext">
+                  Experience Earned <input type="text" class="linebox expearned">
+                  Next Level <input type="text" class="linebox expnext">
                 </fieldset>
               </div>
             </td></tr>
@@ -1120,15 +1120,15 @@
                       <td><input type="text" class="spell0slots"></td>
                     </tr>
                   </table></legend>
-                  <input type="text" class="linebox" class="spell00">
-                  <input type="text" class="linebox" class="spell01">
-                  <input type="text" class="linebox" class="spell02">
-                  <input type="text" class="linebox" class="spell03">
-                  <input type="text" class="linebox" class="spell04">
-                  <input type="text" class="linebox" class="spell05">
-                  <input type="text" class="linebox" class="spell06">
-                  <input type="text" class="linebox" class="spell07">
-                  <input type="text" class="linebox" class="spell08">
+                  <input type="text" class="linebox spell00">
+                  <input type="text" class="linebox spell01">
+                  <input type="text" class="linebox spell02">
+                  <input type="text" class="linebox spell03">
+                  <input type="text" class="linebox spell04">
+                  <input type="text" class="linebox spell05">
+                  <input type="text" class="linebox spell06">
+                  <input type="text" class="linebox spell07">
+                  <input type="text" class="linebox spell08">
                 </fieldset>
               </td>
               <td>
@@ -1146,15 +1146,15 @@
                       <td><input type="text" class="spell4slots"></td>
                     </tr>
                   </table></legend>
-                  <input type="text" class="linebox" class="spell40">
-                  <input type="text" class="linebox" class="spell41">
-                  <input type="text" class="linebox" class="spell42">
-                  <input type="text" class="linebox" class="spell43">
-                  <input type="text" class="linebox" class="spell44">
-                  <input type="text" class="linebox" class="spell45">
-                  <input type="text" class="linebox" class="spell46">
-                  <input type="text" class="linebox" class="spell47">
-                  <input type="text" class="linebox" class="spell48">
+                  <input type="text" class="linebox spell40">
+                  <input type="text" class="linebox spell41">
+                  <input type="text" class="linebox spell42">
+                  <input type="text" class="linebox spell43">
+                  <input type="text" class="linebox spell44">
+                  <input type="text" class="linebox spell45">
+                  <input type="text" class="linebox spell46">
+                  <input type="text" class="linebox spell47">
+                  <input type="text" class="linebox spell48">
                 </fieldset>
               </td>
             </tr>
@@ -1174,15 +1174,15 @@
                       <td><input type="text" class="spell1slots"></td>
                     </tr>
                   </table></legend>
-                  <input type="text" class="linebox" class="spell10">
-                  <input type="text" class="linebox" class="spell11">
-                  <input type="text" class="linebox" class="spell12">
-                  <input type="text" class="linebox" class="spell13">
-                  <input type="text" class="linebox" class="spell14">
-                  <input type="text" class="linebox" class="spell15">
-                  <input type="text" class="linebox" class="spell16">
-                  <input type="text" class="linebox" class="spell17">
-                  <input type="text" class="linebox" class="spell18">
+                  <input type="text" class="linebox spell10">
+                  <input type="text" class="linebox spell11">
+                  <input type="text" class="linebox spell12">
+                  <input type="text" class="linebox spell13">
+                  <input type="text" class="linebox spell14">
+                  <input type="text" class="linebox spell15">
+                  <input type="text" class="linebox spell16">
+                  <input type="text" class="linebox spell17">
+                  <input type="text" class="linebox spell18">
                 </fieldset>
               </td>
               <td>
@@ -1200,15 +1200,15 @@
                       <td><input type="text" class="spell5slots"></td>
                     </tr>
                   </table></legend>
-                  <input type="text" class="linebox" class="spell50">
-                  <input type="text" class="linebox" class="spell51">
-                  <input type="text" class="linebox" class="spell52">
-                  <input type="text" class="linebox" class="spell53">
-                  <input type="text" class="linebox" class="spell54">
-                  <input type="text" class="linebox" class="spell55">
-                  <input type="text" class="linebox" class="spell56">
-                  <input type="text" class="linebox" class="spell57">
-                  <input type="text" class="linebox" class="spell58">
+                  <input type="text" class="linebox spell50">
+                  <input type="text" class="linebox spell51">
+                  <input type="text" class="linebox spell52">
+                  <input type="text" class="linebox spell53">
+                  <input type="text" class="linebox spell54">
+                  <input type="text" class="linebox spell55">
+                  <input type="text" class="linebox spell56">
+                  <input type="text" class="linebox spell57">
+                  <input type="text" class="linebox spell58">
                 </fieldset>
               </td>
             </tr>
@@ -1228,15 +1228,15 @@
                       <td><input type="text" class="spell3slots"></td>
                     </tr>
                   </table></legend>
-                  <input type="text" class="linebox" class="spell30">
-                  <input type="text" class="linebox" class="spell31">
-                  <input type="text" class="linebox" class="spell32">
-                  <input type="text" class="linebox" class="spell33">
-                  <input type="text" class="linebox" class="spell34">
-                  <input type="text" class="linebox" class="spell35">
-                  <input type="text" class="linebox" class="spell36">
-                  <input type="text" class="linebox" class="spell37">
-                  <input type="text" class="linebox" class="spell38">
+                  <input type="text" class="linebox spell30">
+                  <input type="text" class="linebox spell31">
+                  <input type="text" class="linebox spell32">
+                  <input type="text" class="linebox spell33">
+                  <input type="text" class="linebox spell34">
+                  <input type="text" class="linebox spell35">
+                  <input type="text" class="linebox spell36">
+                  <input type="text" class="linebox spell37">
+                  <input type="text" class="linebox spell38">
                 </fieldset>
               </td>
               <td>
@@ -1254,15 +1254,15 @@
                       <td><input type="text" class="spell6slots"></td>
                     </tr>
                   </table></legend>
-                  <input type="text" class="linebox" class="spell60">
-                  <input type="text" class="linebox" class="spell61">
-                  <input type="text" class="linebox" class="spell62">
-                  <input type="text" class="linebox" class="spell63">
-                  <input type="text" class="linebox" class="spell64">
-                  <input type="text" class="linebox" class="spell65">
-                  <input type="text" class="linebox" class="spell66">
-                  <input type="text" class="linebox" class="spell67">
-                  <input type="text" class="linebox" id="spell68">
+                  <input type="text" class="linebox spell60">
+                  <input type="text" class="linebox spell61">
+                  <input type="text" class="linebox spell62">
+                  <input type="text" class="linebox spell63">
+                  <input type="text" class="linebox spell64">
+                  <input type="text" class="linebox spell65">
+                  <input type="text" class="linebox spell66">
+                  <input type="text" class="linebox spell67">
+                  <input type="text" class="linebox spell68">
                 </fieldset>
               </td>
             </tr>
